@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+.TodoContainer {
+  border: 1px solid black;
+  margin-top: 50%;
+  display: grid;
+  place-items: center;
+}
