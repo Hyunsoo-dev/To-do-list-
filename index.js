@@ -26,11 +26,10 @@ function addPendList(value) {
     const newId = pend.length + 1;
     $span.textContent = value;
     $checkBtn.textContent = '✅';
-    $checkBtn.classList.add('todoBtn')
     $falseBtn.textContent = '❌';
-    $falseBtn.classList.add('todoBtn')
+    $falseBtn.classList.add('todoBtn');
     $li.id = newId;    
-    $li.append($span, $checkBtn, $falseBtn);
+    $li.append($checkBtn, $falseBtn, $span);
     $pendList.append($li);
 
     
@@ -81,7 +80,7 @@ function getCompleList(){
 function moveCompleList(event) {
   const btn = event.target;
   const li = btn.parentNode;
-  const value = li.firstChild.textContent;
+  const value = li.childNodes[2].textContent;
   addCompleList(value);
 }
 
@@ -93,11 +92,11 @@ function addCompleList(value) {
   const newId = completed.length + 1;
   $span.textContent = value;
   $checkBtn.textContent = '✅';
-  $checkBtn.classList.add('todoBtn')
   $falseBtn.textContent = '❌';
-  $falseBtn.classList.add('todoBtn')
+  $falseBtn.classList.add('todoBtn');
+  
   $li.id = newId;
-  $li.append($span, $checkBtn, $falseBtn);
+  $li.append($checkBtn, $falseBtn, $span);
   $compleList.append($li);
 
   const obj = {
@@ -129,7 +128,7 @@ function removeCompleList(event) {
 function movePendList(event) {
   const btn = event.target;
   const li = btn.parentNode;
-  const value = li.firstChild.textContent;
+  const value = li.childNodes[2].textContent;
   addPendList(value);
 }
 

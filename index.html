@@ -7,12 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>To Do List</h1>
-    <input type="text" class="inputTodo">
-    <h3>할 일</h3>
-    <ul class="pendList"></ul>
-    <h3>완료한 일</h3>
-    <ul class="compleList"></ul>
+   
+    <div class="TodoContainer">
+        <div class="clock"></div>
+            <h1>To Do List</h1>
+            <input type="text" class="inputTodo">
+            <div class="listContainer">
+                <div class="pend">
+                    <h2>할 일</h2>
+                    <ul class="pendList"></ul>
+                </div>
+                <div class="comple">
+                    <h2>완료한 일</h2>
+                    <ul class="compleList"></ul>
+                </div>
+            </div>
+        
+    </div>   
+        
     <script src="index.js"></script>
+    <script src="clock.js"></script>
+    
 </body>
 </html>
