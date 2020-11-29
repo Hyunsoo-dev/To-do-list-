@@ -1,3 +1,3 @@
 # To-do-list
 
-![todolist](./img/todolist.png);
+![todolist](./img/todolist.png)
