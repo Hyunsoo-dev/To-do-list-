@@ -4,7 +4,7 @@ const $location = document.querySelector('.location');
 const $weather = document.querySelector('.weather');
 const $temp = document.querySelector('.temp');
 
-const apiKey = '6ba138ee811dda538908b3fe6e3bae00';
+const apiKey;
 
 
 if(!navigator.geolocation) {
