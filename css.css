@@ -1,4 +1,5 @@
 @import "clock.css";
+@import "weatherLocation.css";
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 * {
   box-sizing: border-box;
@@ -14,13 +15,25 @@ body {
   background-size: 80% 100vh;
 }
 
-.TodoContainer {
+.container {
   width: 80%;
   margin-top: 20vh;
   margin-left: 9.5%;
+  background-color: rgba(194, 178, 178, 0.5);
+}
+.weatherLocation {
+  text-align: right;
+  padding-right: 20px;
+}
+.weatherLocation > .location,
+.weatherLocation > .weather,
+.weatherLocation > .temp {
+  font-size: 1.2rem;
+}
+
+.TodoContainer {
   display: grid;
   place-items: center;
-  background-color: rgba(194, 178, 178, 0.5);
 }
 .TodoContainer > h1 {
   font-size: 4rem;
